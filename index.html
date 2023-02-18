@@ -19,15 +19,15 @@ function wishBirthday() {
   const messageElement = document.createElement("div");
   messageElement.innerHTML = birthdayMessage;
   messageElement.style.textAlign = "center";
-  messageElement.style.fontSize = "89px";
-  messageElement.style.marginTop = "20rem";
+  messageElement.style.fontSize = "5vw";
+  messageElement.style.marginTop = "20vh";
   
   // Add the birthday message to the page
   document.body.appendChild(messageElement);
   
   // Set up the birthday message to blink with different colors
   let colorIndex = 0;
-  const colors = ["pink", "green", "yellow", "purple", "red", "violet", "maroon","orange","blue","white","skyblue","darkorange","grey","#ff0000"];
+  const colors = ["pink", "green", "yellow", "purple", "red", "violet", "maroon","orange","blue","skyblue","darkorange","grey","#ff0000"];
   setInterval(function() {
     messageElement.style.color = colors[colorIndex];
     colorIndex = (colorIndex + 1) % colors.length;
